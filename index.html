@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Personal Info</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="street">Street Address</label>
+            <input id="street" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="born">Date of birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+
+      </div>
+
+        <h1>Online Order Form</h1>
+        <div class="dropdown">
+          <p>Please select the beverage you wish to purchase</p>
+          <select class="form-control" id="beverage">
+            <option>Coffee</option>
+            <option>Tea</option>
+            <option>Kombucha</option>
+            <option>Water</option>
+          </select>
+        </div>
+
+      <p >Please select your preferred payment method:</p>
+      <div class="radio" id="payment">
+        <label>
+          <input type="radio" name="flavor" value="paypal" checked>
+          PayPal
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="visa">
+          Visa
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="Bitcoin">
+          Bitcoin
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input id="color" class="form-control" type="color">
+      </div>
+      <button type="submit" class="btn">Submit Info</button>
+    </form>
+
+
+    <div id="receipt">
+      <h1><strong>CONFIRMATION</strong></h1>
+      <p>Dear <span class="firstName"></span> <span class="lastName"></span>,</p>
+
+      <p>We have your order ready to process.  We need to confirm your delivery address as: <span class="street"></span> <span class="city"></span> <span class="state"></span> <span class="zip"></span>.</p>
+
+      <p>Your order consists of <span class="beverage"></span> and you would like to be charged via <span class="payment"></span></p>
+    </div>
+  </body>
+</html>
